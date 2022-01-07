@@ -12,9 +12,14 @@ def get_telebot():
 
     @bot.message_handler(content_types=['text'])
     def send_name(message):
-        bot.reply_to(
-            message,
-            f"Welcome {message.from_user.first_name} what does this '{message.text}' mean ?")
+        if message.text == "secret":
+            bot.reply_to(
+                message,
+                f"How must DIE!!!!!")
+        else:
+            bot.reply_to(
+                message,
+                f"Welcome {message.from_user.first_name} what does this '{message.text}' mean ?")
 
     bot.infinity_polling()
 
