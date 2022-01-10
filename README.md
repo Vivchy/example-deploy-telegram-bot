@@ -8,7 +8,7 @@
 
 В корне проекта создать файл зависимостей 
 
-<pre>pipfreeze > requirements.txt </pre>
+<pre>pip freeze > requirements.txt </pre>
 
 ***
 
@@ -97,7 +97,7 @@ sudo nano /lib/systemd/system/project.service
 
 <pre>
 [Unit]
-Description=Описание проекта
+Description= description project
 After=network.target
 
 [Service]
@@ -119,4 +119,4 @@ WantedBy=multi-user.target
     sudo systemctl start project
 </pre>
 
-При обновлении проета systemctl нужно перезапускать
+При обновлении проекта systemctl нужно перезапускать
