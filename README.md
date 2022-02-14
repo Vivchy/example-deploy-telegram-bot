@@ -75,17 +75,6 @@ pip install virtualenv</pre>
 deactivate </pre>
 ***
 
-## По необходимости установить redis
-<pre>
-sudo apt install redis-server
-
-redis-cli
-
-127.0.0.1:6379> ping
-
-</pre>
-
-***
 
 ### Создать собственную службу для беспрерывной работы бота
 
